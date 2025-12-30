@@ -42,8 +42,8 @@ class MainActivity : ComponentActivity() {
 
                             resultText = if (index != -1) {
                                 "Found at index: $index\n" +
-                                        "Steps taken: $steps\n" +
-                                        "Worst case for 128 items: $worstCase steps"
+                                        "Steps(Comparisons) taken: $steps\n , and Halvings are $steps-1 because halvings are always log n\n" +
+                                        "Worst case for 128 items with Binary Search: $worstCase steps"
                             } else {
                                 "Not found. Steps taken: $steps\n" +
                                         "Worst case: $worstCase steps"

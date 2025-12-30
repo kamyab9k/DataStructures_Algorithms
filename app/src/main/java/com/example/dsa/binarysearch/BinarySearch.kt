@@ -16,6 +16,7 @@ class BinarySearch() {
             val guess = SortedNumbers[ArrayMid]
 
             if (guess == target) {
+                // I minus the steps counter because steps are actually 8 but halving is log n which is 7
                 return Pair(ArrayMid, StepsCounter)
 
             } else if (guess < target) {
