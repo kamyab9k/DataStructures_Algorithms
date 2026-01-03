@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.padding(innerPadding),
                         onSearchClicked = { number ->
                             val searcher = BinarySearch()
-                            val (index, steps) = searcher.findItem(number) // Unpacking the Pair
+                            val (index, steps) = searcher.findItem(number)
                             val worstCase = searcher.getWorstCase()
 
                             resultText = if (index != -1) {

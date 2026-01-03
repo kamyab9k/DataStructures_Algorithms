@@ -4,7 +4,7 @@ import kotlin.math.ceil
 import kotlin.math.log2
 
 class BinarySearch() {
-    public val SortedNumbers = IntArray(128) { it + 1 }
+    val SortedNumbers = IntArray(128) { it + 1 }
 
     fun findItem(target: Int): Pair<Int, Int> {
         var ArrayLow = 0
@@ -33,3 +33,16 @@ class BinarySearch() {
         return ceil(log2(SortedNumbers.size.toDouble())).toInt()
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
